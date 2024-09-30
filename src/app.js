@@ -9,19 +9,36 @@ window.onload = function() {
   //write your code here
   console.log("Hello Rigo from the console!");
 };*/
-
+/*
 let pronoun = ["the", "our"];
 let adj = ["great", "big"];
 let noun = ["jogger", "racoon"];
 let domainResult = [".es", ".net", ".io", ".org"];
 
 for (let i = 0; i < pronoun.length; i++) {
-for (let j = 0; j < adj.length; j++) {
-for (let k = 0; k < noun.length; k++) {
-for (let i = 0; i < domainResult.length; l++){
-    domainResult.push(pronoun[i] + adj[j] + noun[k] + domainResult[l]);
+  for (let j = 0; j < adj.length; j++) {
+    for (let k = 0; k < noun.length; k++) {
+      for (let l = 0; l < domainResult.length; l++) {
+        domainResult.push(pronoun[i] + adj[j] + noun[k] + domainResult[l]);
+      }
+    }
   }
 }
-}
-}
 console.log(domainResult);
+*/
+
+const pronoun = ["the", "our"];
+const adj = ["great", "big"];
+const noun = ["jogger", "racoon"];
+const domain = [".es", ".net", ".io", ".org"];
+
+pronoun.forEach((p) => {
+  adj.forEach((a) => {
+    noun.forEach((n) => {
+      domain.forEach((d) => {
+        console.log(p + a + n + d);
+      });
+    });
+  });
+});
+
